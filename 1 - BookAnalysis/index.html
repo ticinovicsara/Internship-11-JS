@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Analysis</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <center><h1>Analiza knjiga prema cijeni</h1></center>
+
+    <input type="text" id="title" placeholder="Title">
+    <input type="number" id="price" placeholder="Price">
+    <input type="text" id="genre" placeholder="Genre">
+
+    <button onclick="AddBook()">Add Book</button>
+    <button onclick="AnalyseBook()">Analyze</button>
+
+    <h2>Books</h2>
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Genre</th>
+                <th>Deviation</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2 id="averagePrice"></h2>
+    <h2 id="mostDeviant"></h2>
+</body>
+</html>
