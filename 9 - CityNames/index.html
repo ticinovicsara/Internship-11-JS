@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Names</title>
+</head>
+<body>
+    <h1>City Names</h1>
+
+    <form id="cityForm">
+        <label for="cityNames">Enter city names (comma separated):</label><br>
+        <input type="text" id="cityNames" placeholder="e.g., Paris,London,New York" required>
+        <button type="submit">Process Cities</button>
+    </form>
+
+    <h2>Cities with more than 5 letters:</h2>
+    <ul id="cityList"></ul>
+
+    <h3>Download CSV File</h3>
+    <button id="downloadButton">Download CSV</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
