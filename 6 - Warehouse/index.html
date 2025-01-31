@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition of equipment in the warehouse</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Condition of equipment in the warehouse</h1>
+
+    <input type="text" id="equipmentName" placeholder="Equipment Name" required>
+    <input type="number" id="equipmentPrice" placeholder="Price" required>
+    <select id="equipmentStatus">
+        <option value="available">Available</option>
+        <option value="unavailable">Unavailable</option>
+    </select>
+    
+    <button id="addEquipmentButton">Add Equipment</button>
+    <button id="processButton">Process Data</button>
+
+    <h2>Unavailable quipment indices</h2>
+    <div id="unavailableIndices"></div>
+
+    <h2>Available equipment</h2>
+    <div id="availableEquipment"></div>
+
+    <h2>Unavailable equipment percentage</h2>
+    <div id="unavailablePercentage"></div>
+
+    <h2>Available equipment by price ranges</h2>
+    <div id="equipmentByPriceRange"></div>
+
+</body>
+</html>

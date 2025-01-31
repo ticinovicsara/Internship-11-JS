@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salaries and Contributions</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Salaries and Contributions</h1>
+    
+    <input type="text" id="fname" placeholder="First Name">
+    <input type="text" id="lname" placeholder="Last Name">
+    <input type="text" id="sector" placeholder="Sector">
+    <input type="number" id="salary" placeholder="Salary">
+
+    <button id="addEmployeeButton">Add employee</button>
+    <button id="calculateButton">Calculate statistics</button>
+
+    <h2>Statistika po sektorima</h2>
+    <table id="sectorTable">
+        <thead>
+            <tr>
+                <th>Sector</th>
+                <th>Percentage of contribution</th>
+                <th>Employees in sector</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
