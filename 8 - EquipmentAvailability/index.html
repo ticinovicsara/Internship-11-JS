@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Availability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Equipment Availability</h1>
+
+    <form id="equipmentForm">
+        <input type="text" id="equipmentName" placeholder="Equipment Name">
+        <input type="number" id="equipmentPrice" placeholder="Price">
+        <select id="equipmentStatus">
+            <option value="available">Available</option>
+            <option value="unavailable">Unavailable</option>
+        </select>
+        <button type="submit">Add Equipment</button>
+    </form>
+    
+    <h2>Equipment List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="equipmentList"></tbody>
+    </table>
+    
+    <h3>Available / Unavailable Equipment Ratio: <span id="ratio">0 / 0</span></h3>
+    
+    <script src="script.js"></script>
+</body>
+</html>
