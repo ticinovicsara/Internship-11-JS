@@ -3,6 +3,7 @@ function generateSquares(N) {
     return [...generateSquares(N - 1), N * N];
 }
 
+
 function calculate() {
     const N = parseInt(document.getElementById("numInput").value);
 
@@ -32,4 +33,9 @@ function calculate() {
     document.getElementById("median").textContent = `Median of squares: ${median}`;
 }
 
-document.getElementById("calculateButton").addEventListener("click", calculate);
+document.addEventListener("DOMContentLoaded", function() {
+    const calculateButton = document.getElementById("calculateButton");
+    const numInput = document.getElementById("numInput");
+
+    calculateButton.addEventListener("click", calculate);
+});
