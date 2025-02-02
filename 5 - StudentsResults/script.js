@@ -12,7 +12,7 @@ function addStudent() {
         document.getElementById("lname").value = "";
         document.getElementById("score").value = "";
     } else {
-        alert("Please input valid data!");
+        alert("Please insert valid data!");
     }
 }
 
